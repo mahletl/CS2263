@@ -1,10 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +15,7 @@ int main() {
 departureTime = &dTime;
 arrivalTime = &aTime;
 
- printf("Enter a 24 hour time:");   
+ printf("Enter a 24 hour time:\n");   
  int a = scanf("%d:%d", &hours, &minutes);
         if ( (a!=2)) {
              printf("Invalid input");
@@ -36,9 +29,9 @@ arrivalTime = &aTime;
         
 findClosetFlight(desiredTime,departureTime, arrivalTime );
 
-printf("The closest departureTime is: %d, arriving at: %d", *departureTime, *arrivalTime); 
+printf("\nThe closest departureTime is: %d, arriving at: %d\n", *departureTime, *arrivalTime); 
 
-}
+}//end of main
 
 
  void findClosetFlight(int desiredTime, int * departureTime, int * arrivalTime){
